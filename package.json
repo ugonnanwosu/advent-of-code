@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "description": "My solutions to the Advent of Code 2020 puzzles.",
+  "main": "day-05.js",
+  "type": "module",
+  "directories": {},
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "14.15.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ugonnanwosu/advent-of-code-2020"
+  },
+  "author": "Ugonna Nwosu",
+  "license": "MIT",
+  "homepage": "https://ugonnanwosu.com"
+}
