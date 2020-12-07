@@ -2,7 +2,6 @@
   "name": "advent-of-code-2020",
   "version": "1.0.0",
   "description": "My solutions to the Advent of Code 2020 puzzles.",
-  "main": "day-05.js",
   "type": "module",
   "directories": {},
   "dependencies": {
