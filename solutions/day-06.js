@@ -25,4 +25,3 @@ fs.readFile('./inputs/day-06.txt',  (err, data) => {
   console.log(`For each group, count the number of questions to which anyone answered "yes". The sum is ${totalSomeYes}`);
   console.log(`For each group, count the number of questions to which everyone answered "yes". The sum is ${totalAllYes}`);
 });
-

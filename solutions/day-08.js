@@ -38,7 +38,7 @@ fs.readFile('./inputs/day-08.txt',  (err, data) => {
 
   const findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) !== index);
 
-  const increment = (options={part: 1, accumulator: 0}) => {
+  const increment = (options={part: 1}) => {
     const { part } = options;
     if (index >= targetIndex) {
       console.log(`Solution 2: Value of accumulator is ${accumulator}`);
@@ -54,7 +54,6 @@ fs.readFile('./inputs/day-08.txt',  (err, data) => {
     const nextActionIndex = (swapActionIndex + 1) % swapActionsArr.length;
     const swappedAction = swapActionsArr[nextActionIndex];
     const isSwapInPool = swappedIndexPool.indexOf(index) > -1;
-
     const shouldSwap = swapActionIndex > -1 && !isSwapInPool && !hasSwapped && part === 2;
 
     if (shouldSwap) {
@@ -68,9 +67,7 @@ fs.readFile('./inputs/day-08.txt',  (err, data) => {
     indexPool.push(index);
     const dupes = findDuplicates(indexPool);
     if (dupes.length === 0) {
-
       increment({part});
-
     } else {
       if (part === 1) {
         console.log(`Solution 1: Value of accumulator is ${accumulator}`);
@@ -84,7 +81,6 @@ fs.readFile('./inputs/day-08.txt',  (err, data) => {
   }
 
   increment({part: 1});
-
   reset();
   increment({part: 2});
 });
