@@ -1,5 +1,5 @@
 node_modules/*
-inputs/*
+**/inputs/
 .idea/
 .DS_Store
 
